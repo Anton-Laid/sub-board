@@ -1,0 +1,21 @@
+.header {
+  margin: 40px 30px;
+  border-radius: 1px solid red;
+
+  &__link {
+    font-family: 'Route', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: right;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 120px 0 0;
+    height: 16px;
+  }
+
+  &__link:nth-child(1) {
+    margin-right: 360px;
+  }
+}
