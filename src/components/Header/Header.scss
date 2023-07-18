@@ -3,12 +3,12 @@
   border-radius: 1px solid red;
 
   &__link {
-    font-family: 'Route', Arial, sans-serif;
+    font-family: "Route", Arial, sans-serif;
     font-size: 18px;
     font-weight: 900;
     line-height: 16px;
     letter-spacing: 0px;
-    text-align: right;
+    text-align: center;
     color: #ffffff;
     text-decoration: none;
     margin: 0 120px 0 0;
@@ -17,5 +17,62 @@
 
   &__link:nth-child(1) {
     margin-right: 360px;
+  }
+
+  &__link_active {
+    display: block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    color: #327c90;
+  }
+
+  &__burger {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    &__container {
+      display: none;
+    }
+
+    &__burger {
+      display: flex;
+      // background: url(../../images/menu_burger_icon_251879.svg) no-repeat;
+      width: 40px;
+      height: 40px;
+      margin-top: 18px;
+      cursor: pointer;
+      align-items: center;
+      flex-direction: column;
+      z-index: 3;
+    }
+
+    &__burger span {
+      transition: all 0.4s;
+      height: 2px;
+      background-color: #fff;
+      display: block;
+      width: 40px;
+      margin: 4px;
+    }
+
+    &__burger_pop span:nth-child(1) {
+      transform: translate(7px, -6px) rotate(45deg);
+      transform-origin: left top;
+    }
+
+    &__burger_pop span:nth-child(2) {
+      transform: scale(0);
+    }
+
+    &__burger_pop span:nth-child(3) {
+      transform: translate(-5px, -25px) rotate(-45deg);
+      transform-origin: right bottom;
+    }
   }
 }

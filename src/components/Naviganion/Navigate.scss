@@ -1,0 +1,43 @@
+.navigation {
+  background-color: #ffffff;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+
+  &__link {
+    width: 100px;
+    height: 40px;
+    color: #f08e80;
+    font-size: 24px;
+    font-weight: normal;
+    text-decoration: none;
+  }
+
+  &__nav {
+    margin-top: 180px;
+  }
+
+  &__link:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 7px;
+  }
+  &__button {
+    display: block;
+    width: 160px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    margin: 60px auto 0;
+    color: #fff;
+    background-color: #f08e80;
+    text-decoration: none;
+  }
+
+  &__button:hover {
+    opacity: 0.8;
+  }
+}

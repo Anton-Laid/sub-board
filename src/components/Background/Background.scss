@@ -1,0 +1,120 @@
+.background {
+  position: relative;
+  width: 95%;
+  margin: 0 20px;
+  height: 80vh;
+
+  &__title {
+    font-family: "Route", Arial, sans-serif;
+    font-size: 34px;
+    font-weight: 900;
+    line-height: 46px;
+    color: #ffffff;
+    text-decoration: none;
+    height: 16px;
+    margin: 150px 0 20px 70px;
+  }
+
+  &__wave {
+    background-image: url(../../images/wave.svg);
+    width: 700px;
+    height: 300px;
+    margin: -20px 0 -20px -40px;
+    background-repeat: no-repeat;
+    transform: rotate(90deg);
+  }
+
+  &__grass {
+    position: absolute;
+    background-image: url(../../images/grass-one.svg);
+    width: 220px;
+    height: 220px;
+    background-repeat: no-repeat;
+  }
+
+  &__grass_position {
+    position: absolute;
+    transform: rotate(20deg);
+    top: -190px;
+    left: 160px;
+    animation: grass 8s linear infinite;
+  }
+
+  &__grass_footer-position {
+    transform: rotate(195deg);
+    position: absolute;
+    bottom: -180px;
+    left: 150px;
+    animation: grass-footer 8s linear infinite;
+  }
+
+  @keyframes grass {
+    0% {
+      transform: rotate(20deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    100% {
+      transform: rotate(20deg);
+    }
+  }
+
+  @keyframes grass-footer {
+    0% {
+      transform: rotate(195deg);
+    }
+    50% {
+      transform: rotate(210deg);
+    }
+    100% {
+      transform: rotate(195deg);
+    }
+  }
+
+  &__jellyfish {
+    background-image: url(../../images/jellyfish.svg);
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    transition: all;
+    animation: jellyfish 50s cubic-bezier(0, 0, 0.95, 0.92) infinite;
+  }
+
+  &__jellyfish_position {
+    position: absolute;
+    top: -80px;
+    left: 350px;
+  }
+
+  @keyframes jellyfish {
+    0% {
+      transform: rotate(0deg);
+      top: -80px;
+      left: 350px;
+    }
+    50% {
+      transform: rotate(360deg);
+      top: -94px;
+      left: 340px;
+    }
+    100% {
+      transform: rotate(0deg);
+      top: -80px;
+      left: 350px;
+    }
+  }
+
+  &__fishs {
+    background: url(../../images/fishs.svg) no-repeat;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: -50px;
+    left: -50px;
+  }
+
+  &__box {
+    margin: 0 auto;
+  }
+}
