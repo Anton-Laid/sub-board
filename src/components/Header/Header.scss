@@ -1,9 +1,11 @@
 .header {
-  margin: 40px 30px;
-  border-radius: 1px solid red;
+  margin: 40px auto;
+  width: 90%;
+  position: relative;
+  z-index: 5;
+  font-family: 'Route', Arial, sans-serif;
 
   &__link {
-    font-family: "Route", Arial, sans-serif;
     font-size: 18px;
     font-weight: 900;
     line-height: 16px;
@@ -11,12 +13,13 @@
     text-align: center;
     color: #ffffff;
     text-decoration: none;
-    margin: 0 120px 0 0;
+    margin: 0 20vw 0 0;
     height: 16px;
+    cursor: pointer;
   }
 
   &__link:nth-child(1) {
-    margin-right: 360px;
+    margin-right: 25vw;
   }
 
   &__link_active {
@@ -36,16 +39,17 @@
 
 @media (max-width: 768px) {
   .header {
+    display: flex;
+    justify-content: end;
+
     &__container {
       display: none;
     }
 
     &__burger {
       display: flex;
-      // background: url(../../images/menu_burger_icon_251879.svg) no-repeat;
       width: 40px;
       height: 40px;
-      margin-top: 18px;
       cursor: pointer;
       align-items: center;
       flex-direction: column;
@@ -64,6 +68,7 @@
     &__burger_pop span:nth-child(1) {
       transform: translate(7px, -6px) rotate(45deg);
       transform-origin: left top;
+      background-color: #000;
     }
 
     &__burger_pop span:nth-child(2) {
@@ -73,6 +78,7 @@
     &__burger_pop span:nth-child(3) {
       transform: translate(-5px, -25px) rotate(-45deg);
       transform-origin: right bottom;
+      background-color: #000;
     }
   }
 }

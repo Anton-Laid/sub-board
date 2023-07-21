@@ -8,7 +8,53 @@ html {
 }
 
 .App {
-  width: 100%;
+  background-color: #327c90;
+  position: relative;
+  width: 100vw;
   height: 100vh;
   overflow: hidden;
+}
+
+.wave {
+  position: absolute;
+  top: -194px;
+  left: -136px;
+  width: 542px;
+  height: 148vh;
+  transform: rotate(-1deg);
+  animation: wave 40s linear infinite;
+}
+
+.wave-two {
+  position: absolute;
+  top: -170px;
+  left: -145px;
+  width: 542px;
+  height: 152vh;
+  transform: rotate(7deg);
+  animation: wave-two 40s linear infinite;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(8deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+
+@keyframes wave-two {
+  0% {
+    transform: rotate(7deg);
+  }
+  50% {
+    transform: rotate(11deg);
+  }
+  100% {
+    transform: rotate(7deg);
+  }
 }

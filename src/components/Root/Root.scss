@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Mynerve&family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,800;0,900;1,700&family=Patrick+Hand&family=Victor+Mono:ital,wght@1,700&display=swap');
+
+.root {
+  overflow-y: scroll;
+}
+
+.root::-webkit-scrollbar {
+  width: 15px;
+}
+
+.root::-webkit-scrollbar-track {
+  background: #125369;
+}
+
+.root::-webkit-scrollbar-thumb {
+  background: #8af3e5;
+  border-radius: 8px;
+  border: 3px solid #8af3e5;
+}
+
+.root::-webkit-scrollbar-thumb:hover {
+  background: #8af3e5;
+}
+
+.root {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba($color: #000000, $alpha: 0.38);
+  font-family: 'Montserrat', sans-serif;
+  //font-family: 'Mynerve', cursive;
+  //font-family: 'Nunito', sans-serif;
+  //font-family: 'Patrick Hand', cursive;
+
+  &__title {
+    font-family: 'Mynerve', cursive;
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 64px;
+    width: 40%;
+    margin: 110px auto 40px;
+    color: #fff;
+    text-align: center;
+    //color: #000;
+  }
+
+  &__paragraph {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 40px;
+    margin: 20px auto;
+    color: #fff;
+    width: 80%;
+    text-align: justify;
+    //color: #000;
+  }
+
+  &__telegram {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 40px;
+    color: #fff;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  &__title-strolls {
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 30px;
+    margin: 60px auto;
+    text-align: center;
+    color: #fff;
+    width: 80%;
+  }
+
+  &__title-route {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 30px;
+    margin: 40px auto;
+    text-align: center;
+    color: #fff;
+    //color: #000;
+    width: 80%;
+  }
+
+  &__title-ways {
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 30px;
+    margin: 20px auto;
+    text-align: center;
+    color: #fff;
+    //color: #000;
+    width: 80%;
+  }
+
+  &__title-individually {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 30px;
+    margin: 20px auto;
+    text-align: center;
+    color: #fff;
+    //color: #000;
+    width: 80%;
+  }
+
+  &__text {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 30px;
+    margin: 40px auto;
+    text-align: center;
+    color: #fff;
+    //color: #000;
+    width: 80%;
+  }
+
+  &__text-explanation {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 30px;
+    margin: 20px auto;
+    text-align: center;
+    color: #fff;
+    //color: #000;
+    width: 80%;
+  }
+
+  &__text-map {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    margin: 20px auto;
+    color: #fff;
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .root {
+    &__title {
+      font-size: 46px;
+      font-weight: 900;
+      line-height: 64px;
+      width: 90%;
+      margin: 110px auto 20px;
+      color: #fff;
+      text-align: center;
+      //color: #000;
+    }
+  }
+}

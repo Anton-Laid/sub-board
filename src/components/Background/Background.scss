@@ -1,32 +1,12 @@
 .background {
   position: relative;
-  width: 95%;
-  margin: 0 20px;
-  height: 80vh;
-
-  &__title {
-    font-family: "Route", Arial, sans-serif;
-    font-size: 34px;
-    font-weight: 900;
-    line-height: 46px;
-    color: #ffffff;
-    text-decoration: none;
-    height: 16px;
-    margin: 150px 0 20px 70px;
-  }
-
-  &__wave {
-    background-image: url(../../images/wave.svg);
-    width: 700px;
-    height: 300px;
-    margin: -20px 0 -20px -40px;
-    background-repeat: no-repeat;
-    transform: rotate(90deg);
-  }
+  width: 100vw;
+  margin: 0 auto;
+  height: 90vh;
+  z-index: 1;
 
   &__grass {
     position: absolute;
-    background-image: url(../../images/grass-one.svg);
     width: 220px;
     height: 220px;
     background-repeat: no-repeat;
@@ -35,17 +15,17 @@
   &__grass_position {
     position: absolute;
     transform: rotate(20deg);
-    top: -190px;
-    left: 160px;
+    top: -120px;
+    left: 165px;
     animation: grass 8s linear infinite;
   }
 
-  &__grass_footer-position {
+  &__grass_footer_position {
     transform: rotate(195deg);
     position: absolute;
     bottom: -180px;
-    left: 150px;
-    animation: grass-footer 8s linear infinite;
+    left: 340px;
+    animation: grass_footer 8s linear infinite;
   }
 
   @keyframes grass {
@@ -60,7 +40,7 @@
     }
   }
 
-  @keyframes grass-footer {
+  @keyframes grass_footer {
     0% {
       transform: rotate(195deg);
     }
@@ -73,18 +53,16 @@
   }
 
   &__jellyfish {
-    background-image: url(../../images/jellyfish.svg);
-    width: 90px;
-    height: 90px;
-    position: absolute;
-    transition: all;
-    animation: jellyfish 50s cubic-bezier(0, 0, 0.95, 0.92) infinite;
+    width: 80px;
+    height: 80px;
   }
 
   &__jellyfish_position {
     position: absolute;
-    top: -80px;
+    top: 0px;
     left: 350px;
+    transition: all;
+    animation: jellyfish 15s cubic-bezier(0, 0, 0.95, 0.92) infinite;
   }
 
   @keyframes jellyfish {
@@ -106,15 +84,620 @@
   }
 
   &__fishs {
-    background: url(../../images/fishs.svg) no-repeat;
     width: 200px;
     height: 200px;
-    position: absolute;
-    bottom: -50px;
-    left: -50px;
   }
 
-  &__box {
-    margin: 0 auto;
+  &__fishs_position {
+    position: absolute;
+    bottom: -50px;
+    left: -3vw;
+  }
+
+  &__fern {
+    width: 250px;
+    height: 220px;
+  }
+
+  &__fern_position {
+    position: absolute;
+    bottom: -150px;
+    left: 23vw;
+    transform: rotate(0deg);
+    animation: fern 20s linear infinite;
+  }
+
+  @keyframes fern {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(15deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+  &__tree {
+    width: 250px;
+    height: 220px;
+    position: absolute;
+    bottom: -130px;
+    left: 31vw;
+    transform: rotate(0deg);
+    animation: tree 10s linear infinite;
+  }
+
+  @keyframes tree {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(-20deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+  &__bubble {
+    width: 20px;
+    height: 20px;
+  }
+
+  &__bubble_position {
+    position: absolute;
+    top: 60px;
+    left: 5vw;
+  }
+
+  &__ball {
+    width: 40px;
+    height: 40px;
+  }
+
+  &__ball_position {
+    position: absolute;
+    top: 90px;
+    left: 15vw;
+  }
+
+  &__jellyfish_position-bottom {
+    position: absolute;
+    bottom: -40px;
+    right: 35vw;
+    transition: all;
+    animation: jellyfish-bottm 18s cubic-bezier(0, 0, 0.95, 0.92) infinite;
+  }
+
+  @keyframes jellyfish-bottm {
+    0% {
+      transform: rotate(0deg);
+      bottom: -40px;
+      right: 35vw;
+    }
+    50% {
+      transform: rotate(360deg);
+      bottom: -50px;
+      right: 32vw;
+    }
+    100% {
+      transform: rotate(0deg);
+      bottom: -40px;
+      right: 35vw;
+    }
+  }
+
+  &__bubble_position-bottom {
+    position: absolute;
+    bottom: 76px;
+    right: 25vw;
+  }
+
+  &__ball_position-bottom {
+    position: absolute;
+    bottom: 160px;
+    right: 15vw;
+  }
+
+  &__fishs_position-top {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    transform: rotate(-20deg);
+  }
+
+  &__fern_position-bottom {
+    position: absolute;
+    bottom: -19.5vh;
+    right: 2vw;
+    width: 300px;
+    height: 300px;
+    transform: rotate(-10deg);
+    animation: fern-bottom 50s linear infinite;
+  }
+
+  &__fern_position-bottom-rigth {
+    transform: rotate(114deg);
+    position: absolute;
+    bottom: -146px;
+    right: -7vw;
+    width: 300px;
+    height: 300px;
+    animation: fern-bottom-rigth 50s linear infinite;
+  }
+
+  @keyframes fern-bottom {
+    0% {
+      transform: rotate(-10deg);
+    }
+    50% {
+      transform: rotate(5deg);
+    }
+    100% {
+      transform: rotate(-10deg);
+    }
+  }
+
+  @keyframes fern-bottom-rigth {
+    0% {
+      transform: rotate(114deg);
+    }
+    50% {
+      transform: rotate(100deg);
+    }
+    100% {
+      transform: rotate(114deg);
+    }
+  }
+
+  &__ball-sos {
+    width: 60px;
+    height: 60px;
+  }
+
+  &__ball-sos_position {
+    position: absolute;
+    transform: rotate(5deg);
+    top: 70px;
+    right: 170px;
+    animation: ball-sos 30s linear infinite;
+  }
+
+  @keyframes ball-sos {
+    0% {
+      top: 70px;
+      right: 170px;
+      transform: rotate(5deg);
+    }
+    25% {
+      top: 10px;
+      right: 240px;
+      transform: rotate(300deg);
+    }
+    50% {
+      top: -10px;
+      right: 160px;
+      transform: rotate(300deg);
+    }
+    75% {
+      top: 50px;
+      right: 120px;
+      transform: rotate(300deg);
+    }
+    100% {
+      top: 70px;
+      right: 170px;
+      transform: rotate(5deg);
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  .background {
+    &__grass_position {
+      transform: rotate(94deg);
+      top: -135px;
+      left: -4vw;
+    }
+
+    &__jellyfish_position {
+      position: absolute;
+      top: 0px;
+      left: 140px;
+      transition: all;
+      animation: jellyfish 5s cubic-bezier(0, 0, 0.95, 0.92) infinite;
+    }
+    @keyframes jellyfish {
+      0% {
+        transform: rotate(0deg);
+        top: 0px;
+        left: 140px;
+      }
+      50% {
+        transform: rotate(120deg);
+        top: -10px;
+        left: 150px;
+      }
+      100% {
+        transform: rotate(0deg);
+        top: 0px;
+        left: 140px;
+      }
+    }
+    &__fishs {
+      width: 200px;
+      height: 200px;
+    }
+
+    &__fishs_position {
+      position: absolute;
+      bottom: 120px;
+      left: -9vw;
+    }
+
+    .background__fern_position {
+      position: absolute;
+      bottom: -150px;
+      left: -10vw;
+      transform: rotate(10deg);
+      animation: fern 20s linear infinite;
+    }
+
+    @keyframes fern {
+      0% {
+        transform: rotate(0deg);
+      }
+      50% {
+        transform: rotate(30deg);
+      }
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+
+    &__tree {
+      width: 250px;
+      height: 220px;
+      position: absolute;
+      bottom: -130px;
+      left: 5vw;
+      transform: rotate(0deg);
+      animation: tree 10s linear infinite;
+    }
+
+    &__grass_footer_position {
+      position: absolute;
+      bottom: -180px;
+      left: 3vw;
+      animation: grass_footer 8s linear infinite;
+    }
+
+    @keyframes grass_footer {
+      0% {
+        transform: rotate(230deg);
+      }
+      50% {
+        transform: rotate(210deg);
+      }
+      100% {
+        transform: rotate(230deg);
+      }
+    }
+
+    &__fern_position-bottom {
+      position: absolute;
+      bottom: -177px;
+      right: 2vw;
+      width: 240px;
+      height: 240px;
+    }
+
+    &__fern_position-bottom-rigth {
+      bottom: -146px;
+      right: -15vw;
+      width: 270px;
+      height: 270px;
+    }
+
+    &__ball_position-bottom {
+      position: absolute;
+      bottom: 250px;
+      right: 15vw;
+    }
+
+    &__bubble_position-bottom {
+      position: absolute;
+      bottom: 160px;
+      right: 25vw;
+    }
+
+    &__jellyfish_position-bottom {
+      bottom: -40px;
+      right: 35vw;
+    }
+
+    @keyframes jellyfish-bottm {
+      0% {
+        transform: rotate(0deg);
+        bottom: 70px;
+        right: 35vw;
+      }
+      50% {
+        transform: rotate(360deg);
+        bottom: 150px;
+        right: 32vw;
+      }
+      100% {
+        transform: rotate(0deg);
+        bottom: 70px;
+        right: 35vw;
+      }
+    }
+    &__fishs_position-top {
+      position: absolute;
+      top: -60px;
+      right: -60px;
+      transform: rotate(-20deg);
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .background {
+    // &__grass_position {
+    //   // top: -228px;
+    //   // left: -15vw;
+    // }
+
+    &__jellyfish_position {
+      top: 0px;
+      left: 140px;
+      animation: jellyfish 15s cubic-bezier(0, 0, 0.95, 0.92) infinite;
+    }
+
+    @keyframes jellyfish {
+      0% {
+        transform: rotate(0deg);
+        top: 20px;
+        left: 120px;
+      }
+      50% {
+        transform: rotate(200deg);
+        top: 50px;
+        left: 150px;
+      }
+      100% {
+        transform: rotate(0deg);
+        top: 20px;
+        left: 120px;
+      }
+    }
+    &__fishs {
+      width: 230px;
+      height: 230px;
+    }
+
+    &__fishs_position {
+      position: absolute;
+      bottom: 240px;
+      left: -23vw;
+    }
+
+    .background__fern_position {
+      bottom: -95px;
+      left: -21vw;
+    }
+
+    @keyframes fern {
+      0% {
+        transform: rotate(40deg);
+      }
+      50% {
+        transform: rotate(60deg);
+      }
+      100% {
+        transform: rotate(40deg);
+      }
+    }
+
+    &__tree {
+      width: 262px;
+      height: 270px;
+    }
+
+    &__grass_footer_position {
+      bottom: -208px;
+      left: 2vw;
+    }
+
+    @keyframes grass_footer {
+      0% {
+        transform: rotate(230deg);
+      }
+      50% {
+        transform: rotate(250deg);
+      }
+      100% {
+        transform: rotate(230deg);
+      }
+    }
+
+    &__fern_position-bottom {
+      position: absolute;
+      bottom: -177px;
+      right: 2vw;
+      width: 240px;
+      height: 240px;
+    }
+
+    &__fern_position-bottom-rigth {
+      bottom: -79px;
+      right: -30vw;
+      width: 270px;
+      height: 270px;
+    }
+
+    &__ball_position-bottom {
+      position: absolute;
+      bottom: 250px;
+      right: 15vw;
+    }
+
+    &__bubble_position-bottom {
+      position: absolute;
+      bottom: 160px;
+      right: 25vw;
+    }
+
+    &__jellyfish_position-bottom {
+      bottom: -40px;
+      right: 35vw;
+    }
+
+    @keyframes ball-sos {
+      0% {
+        top: 100px;
+        right: 120px;
+        transform: rotate(5deg);
+      }
+      25% {
+        top: 90px;
+        right: 150px;
+        transform: rotate(300deg);
+      }
+      50% {
+        top: 60px;
+        right: 162px;
+        transform: rotate(270deg);
+      }
+      75% {
+        top: 50px;
+        right: 120px;
+        transform: rotate(180deg);
+      }
+      100% {
+        top: 100px;
+        right: 120px;
+        transform: rotate(5deg);
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .background {
+    // &__grass_position {
+    //   // top: -236px;
+    //   // left: -25vw;
+    // }
+
+    &__jellyfish_position {
+      top: 0px;
+      left: 140px;
+      animation: jellyfish 15s cubic-bezier(0, 0, 0.95, 0.92) infinite;
+    }
+
+    @keyframes jellyfish {
+      0% {
+        transform: rotate(0deg);
+        top: 20px;
+        left: 120px;
+      }
+      50% {
+        transform: rotate(200deg);
+        top: 50px;
+        left: 150px;
+      }
+      100% {
+        transform: rotate(0deg);
+        top: 20px;
+        left: 120px;
+      }
+    }
+    &__fishs {
+      width: 230px;
+      height: 230px;
+    }
+
+    &__fishs_position {
+      position: absolute;
+      bottom: 240px;
+      left: -23vw;
+    }
+
+    .background__fern_position {
+      bottom: -100px;
+      left: -35vw;
+    }
+
+    &__tree {
+      width: 123px;
+      height: 347px;
+    }
+
+    &__grass_footer_position {
+      bottom: -224px;
+      left: -9vw;
+    }
+
+    &__fern_position-bottom {
+      position: absolute;
+      bottom: -185px;
+      right: -16vw;
+      width: 240px;
+      height: 240px;
+    }
+
+    &__fern_position-bottom-rigth {
+      bottom: -67px;
+      right: -43vw;
+    }
+
+    &__ball_position-bottom {
+      position: absolute;
+      bottom: 250px;
+      right: 15vw;
+    }
+
+    &__bubble_position-bottom {
+      position: absolute;
+      bottom: -185px;
+      right: -16vw;
+    }
+
+    &__jellyfish_position-bottom {
+      bottom: -40px;
+      right: 35vw;
+    }
+
+    @keyframes ball-sos {
+      0% {
+        top: 200px;
+        right: 20px;
+        transform: rotate(5deg);
+      }
+      25% {
+        top: 240px;
+        right: 40px;
+        transform: rotate(300deg);
+      }
+      50% {
+        top: 210px;
+        right: 20px;
+        transform: rotate(270deg);
+      }
+      75% {
+        top: 190px;
+        right: 60px;
+        transform: rotate(180deg);
+      }
+      100% {
+        top: 200px;
+        right: 20px;
+        transform: rotate(5deg);
+      }
+    }
   }
 }

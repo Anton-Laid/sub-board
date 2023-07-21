@@ -1,10 +1,10 @@
-import React from "react";
-import "./Popap.scss";
+import React from 'react';
+import './Popap.scss';
 
-const Popup = ({ popap, hendleClosePopup, children }) => {
+const Popup = ({ open, hendleClosePopup, children }) => {
   return (
     <div
-      className={`popup ${popap ? "popup_opened" : ""}`}
+      className={`popup ${open ? 'popup_opened' : ''}`}
       // onClick={(e) => closePopup(e, hendleClosePopup)}
     >
       {children}

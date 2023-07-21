@@ -1,0 +1,276 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.record {
+  width: 400px;
+  height: 640px;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 20px;
+  position: relative;
+
+  &__cloce {
+    background: url(../../images/close.svg) no-repeat;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    cursor: pointer;
+    transform: rotate(0deg);
+  }
+
+  &__cloce:hover {
+    animation: animClose 0.3s linear;
+  }
+
+  &__input-message {
+    display: block;
+    width: 90%;
+    height: 120px;
+    margin: 10px auto;
+    padding: 10px;
+  }
+
+  @keyframes animClose {
+    0% {
+      transform: rotate(90deg);
+    }
+  }
+  &__logo-positioning {
+    display: block;
+    margin: 0 auto 40px;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 20px auto 80px;
+  }
+
+  &__container-checkbox {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  &__checkbox {
+    margin-right: 5px;
+  }
+
+  &__input {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    border: none;
+    color: #000;
+    background-color: rgba(0, 0, 0, 0);
+    outline: 0;
+    text-align: right;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0px;
+    text-align: left;
+    border-bottom: 1px solid #e8e8e8;
+  }
+
+  &__input:focus-visible {
+    border-bottom: 1px solid #2be080;
+  }
+
+  &__input-error {
+    display: block;
+    width: 90%;
+    height: 24px;
+    margin: 6px auto 8px;
+    color: #ee3465;
+    opacity: 0;
+  }
+
+  &__input-error_activ {
+    opacity: 1;
+  }
+
+  &__lable {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 12px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #a0a0a0;
+    position: relative;
+  }
+
+  &__btn-save {
+    width: 90%;
+    height: 45px;
+    margin: 25px auto 14px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: center;
+    background-color: #2be080;
+    border-radius: 3px;
+    display: block;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__btn-save:hover {
+    opacity: 0.9;
+  }
+
+  &__btn-save:disabled {
+    background-color: #f8f8f8;
+    color: #c2c2c2;
+  }
+
+  &__paragraph {
+    color: #a0a0a0;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0 7px 0 0;
+  }
+
+  &__btn-signin {
+    color: #2be080;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  &__btn-signin:hover {
+    opacity: 0.8;
+  }
+
+  &__box-btn {
+    width: 74%;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  &__input-error {
+    display: block;
+    width: 100%;
+    height: 24px;
+    margin: 6px auto 8px;
+    color: #ee3465;
+    opacity: 0;
+  }
+
+  &__input-error_activ {
+    opacity: 1;
+  }
+
+  &__error-message {
+    color: #ee3465;
+    height: 20px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    display: block;
+    text-align: center;
+    margin: 220px auto 0;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  &__error-message_activ {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &__container-true {
+    width: 90%;
+    margin: 50px auto;
+  }
+
+  &__container_title {
+    font-size: 24px;
+    width: 95%;
+    margin: 110px auto 50px;
+    font-weight: 900;
+    line-height: 25px;
+    text-align: center;
+  }
+
+  &__container_img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 200px auto 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .record {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
+
+    &__form {
+      margin: 120px auto;
+    }
+
+    &__logo-positioning {
+      margin-left: 0;
+    }
+
+    &__title {
+      margin-bottom: 40px;
+    }
+
+    &__btn-save {
+      margin-bottom: 18px;
+      font-size: 14px;
+      line-height: 17px;
+    }
+
+    &__box-btn {
+      width: 217px;
+    }
+
+    &__paragraph {
+      font-size: 14px;
+      line-height: 17px;
+    }
+
+    &__btn-signin {
+      font-size: 14px;
+      line-height: 17px;
+    }
+
+    &__error-message {
+      margin-top: 100px;
+    }
+
+    &__cloce {
+      top: 20px;
+      right: 20px;
+    }
+  }
+}

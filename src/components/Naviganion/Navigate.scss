@@ -4,14 +4,23 @@
   height: 100vh;
   width: 100%;
   z-index: 1;
+  font-family: 'Route', Arial, sans-serif;
 
   &__link {
     width: 100px;
     height: 40px;
-    color: #f08e80;
+    color: #327c90;
     font-size: 24px;
     font-weight: normal;
     text-decoration: none;
+    text-align: center;
+  }
+
+  &__text {
+    font-size: 24px;
+    font-weight: 900;
+    width: 100px;
+    margin: 20px auto;
   }
 
   &__nav {
@@ -23,6 +32,7 @@
     text-decoration-thickness: 2px;
     text-underline-offset: 7px;
   }
+
   &__button {
     display: block;
     width: 160px;
@@ -33,8 +43,9 @@
     text-align: center;
     margin: 60px auto 0;
     color: #fff;
-    background-color: #f08e80;
+    background-color: #327c90;
     text-decoration: none;
+    border-radius: 10px;
   }
 
   &__button:hover {
