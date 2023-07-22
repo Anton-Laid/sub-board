@@ -1,0 +1,41 @@
+.btn-route {
+  /* Variables */
+  display: block;
+  margin: 20px auto;
+  width: 70%;
+  --button_radius: 0.75em;
+  --button_color: rgb(137, 222, 204);
+  --button_outline_color: #000000;
+  font-size: 19px;
+  font-weight: bold;
+  border: none;
+  border-radius: var(--button_radius);
+  background: var(--button_outline_color);
+
+  &__link {
+    text-decoration: none;
+  }
+}
+
+.button_top {
+  display: block;
+  min-height: 45px;
+  box-sizing: border-box;
+  border: 2px solid var(--button_outline_color);
+  border-radius: var(--button_radius);
+  padding: 0.75em 1.5em;
+  background: var(--button_color);
+  color: var(--button_outline_color);
+  transform: translateY(-0.2em);
+  transition: transform 0.1s ease;
+}
+
+.btn-route:hover .button_top {
+  /* Pull the button upwards when hovered */
+  transform: translateY(-0.33em);
+}
+
+.btn-route:active .button_top {
+  /* Push the button downwards when pressed */
+  transform: translateY(0);
+}

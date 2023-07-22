@@ -1,15 +1,13 @@
-import './App.scss';
-import Header from '../Header/Header';
-import Background from '../Background/Background';
-import { Routes, Route } from 'react-router-dom';
-import { useState } from 'react';
-import Root from '../Root/Root';
-import Popup from '../Popap/Popap';
-import Navigation from '../Naviganion/Navigation';
-import wave from '../../images/test.svg';
-import waveTwo from '../../images/test2.svg';
-import Gallery from '../Gallery/Gallery';
-import Record from '../Record/Record';
+import "./App.scss";
+import Background from "../Background/Background";
+import { Routes, Route } from "react-router-dom";
+import { useState } from "react";
+import Root from "../Root/Root";
+import Popup from "../Popap/Popap";
+import { WaveArr } from "../../utils/constants";
+import Record from "../Record/Record";
+import { Strolls } from "../Strolls/Strolls";
+import Questions from "../Questions/Questions";
 
 function App() {
   const [popap, setPopap] = useState(false);
@@ -20,34 +18,28 @@ function App() {
 
   return (
     <div className="App">
-      {/* <Header popap={popap} hendleClosePopup={hendleClosePopup} /> */}
+      <Background>
+        <Routes>
+          <Route path="/" element={<Root onClick={hendleClosePopup} />} />
+          <Route path="/strolls" element={<Strolls />} />
+          <Route path="/questions" element={<Questions />} />
+        </Routes>
 
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <Background children={<Root onClick={hendleClosePopup} />} />
-          }
+        <Popup
+          open={popap}
+          children={<Record hendleClosePopup={hendleClosePopup} />}
         />
-        {/* <Route
-          path="/gallery"
-          element={<Background children={<Gallery />} />}
-        /> */}
-        <Route
-          path="/record"
-          element={
-            <Background
-              children={<Record hendleClosePopup={hendleClosePopup} />}
+        {WaveArr.map((item, index) => {
+          return (
+            <img
+              src={item.wave}
+              alt="волна"
+              className={item.class}
+              key={index}
             />
-          }
-        />
-      </Routes>
-      <Popup
-        open={popap}
-        children={<Record hendleClosePopup={hendleClosePopup} />}
-      />
-      <img src={wave} alt="fon" className="wave" />
-      <img src={waveTwo} alt="fon" className="wave-two" />
+          );
+        })}
+      </Background>
     </div>
   );
 }

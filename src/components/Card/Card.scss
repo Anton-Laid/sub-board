@@ -1,0 +1,243 @@
+.cart {
+  width: 420px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  height: 120px;
+  border-radius: 20px;
+  background-color: #fff;
+  position: relative;
+
+  &__image {
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    margin: 10px 0 0 10px;
+  }
+
+  &__text {
+    font-size: 16px;
+    width: 240px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 15px 0 0 20px;
+    text-align: start;
+    color: #000;
+    height: 20px;
+  }
+
+  &__price {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 15px;
+    margin: 24px 0 0 20px;
+    text-align: start;
+    color: #000;
+    height: 20px;
+  }
+
+  &__time {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 15px;
+    margin: 5px 0 0 20px;
+    text-align: start;
+    color: #000;
+    height: 20px;
+  }
+
+  &__button {
+    border: none;
+    width: 120px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    background-color: #67bbb0;
+    border-radius: 8px;
+    cursor: pointer;
+    position: absolute;
+    top: 75px;
+    right: 20px;
+  }
+
+  &__button:hover {
+    opacity: 0.8;
+  }
+}
+
+@media (max-width: 800px) {
+  .cart {
+    width: 100%;
+
+    &__text {
+      width: 220px;
+    }
+  }
+}
+
+// .card {
+//   width: 80%;
+//   height: 274px;
+//   margin: 0 auto;
+//   background: white;
+//   padding: 0.4em;
+//   border-radius: 6px;
+//   position: relative;
+
+//   &__button {
+//     border: none;
+//     width: 120px;
+//     height: 30px;
+//     font-size: 15px;
+//     font-weight: 400;
+//     line-height: 20px;
+//     text-align: center;
+//     color: #fff;
+//     background-color: #67bbb0;
+//     border-radius: 8px;
+//     cursor: pointer;
+//     position: absolute;
+//     bottom: 20px;
+//     right: 20px;
+//   }
+
+//   &__button:hover {
+//     opacity: 0.8;
+//   }
+// }
+
+// .card-image {
+//   background-color: rgb(236, 236, 236);
+//   width: 100%;
+//   height: 60%;
+//   border-radius: 6px 6px 0 0;
+// }
+
+// .card-image:hover {
+//   transform: scale(0.98);
+// }
+
+// .category {
+//   text-transform: uppercase;
+//   font-size: 0.7em;
+//   font-weight: 600;
+//   color: rgb(63, 121, 230);
+//   padding: 10px 7px 0;
+// }
+
+// .category:hover {
+//   cursor: pointer;
+// }
+
+// .heading {
+//   font-size: 24px;
+//   text-align: start;
+//   font-weight: 400;
+//   color: rgb(88, 87, 87);
+//   padding: 7px;
+// }
+
+// .heading:hover {
+//   cursor: pointer;
+// }
+
+// .author {
+//   color: gray;
+//   font-weight: 400;
+//   font-size: 11px;
+//   padding-top: 20px;
+// }
+
+// .name {
+//   font-weight: 600;
+// }
+
+// .name:hover {
+//   cursor: pointer;
+// }
+
+// .card {
+//   &__container {
+//     position: relative;
+//     width: 190px;
+//     height: 254px;
+//   }
+
+//   &__box {
+//     position: relative;
+//     width: 190px;
+//     height: 254px;
+//     background: #f5f5f5;
+//     border-radius: 8px;
+//     color: #232323;
+//     padding: 16px;
+//     border: 1px solid #232323;
+//     transition: all 0.5s ease-in-out;
+//     overflow: hidden;
+//   }
+
+//   &__card-hidden {
+//     display: flex;
+//     transform: translateY(200%);
+//     flex-direction: column;
+//     gap: 0.5rem;
+//     transition: transform 0.5s ease-in, opacity 0.3s ease-in;
+//     opacity: 0;
+//   }
+
+//   &__card-border {
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     left: 0;
+//     top: 0;
+//     border: 1px dashed #232323;
+//     border-radius: 8px;
+//     z-index: -1;
+//   }
+
+//   &__box:hover {
+//     transform: translate(-15px, -15px);
+//     border-color: #5bc0eb;
+//   }
+
+//   &__box:hover .card-hidden {
+//     transform: translateY(0);
+//     opacity: 1;
+//   }
+
+//   &__box:hover .title {
+//     transform: translateY(200%);
+//   }
+
+//   &__title {
+//     position: absolute;
+//     bottom: 1rem;
+//     font-weight: 700;
+//     font-size: 1.5rem;
+//     transition: transform 0.25s ease-out;
+//   }
+
+//   &__title-in {
+//     font-weight: 700;
+//     font-size: 1.25rem;
+//   }
+
+//   &__button {
+//     display: inline-flex;
+//     justify-content: center;
+//     padding: 8px;
+//     border-radius: 24px;
+//     font-weight: 600;
+//     background-color: #5bc0eb;
+//     cursor: pointer;
+//     transition: background-color 0.3s ease-in-out;
+//   }
+
+//   &__button:hover {
+//     background-color: #53aed4;
+//   }
+// }

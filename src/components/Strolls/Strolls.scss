@@ -1,0 +1,42 @@
+.strolls {
+  z-index: 2;
+  background-color: rgba($color: #000000, $alpha: 0.38);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100vh;
+
+  &__title-ways {
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 30px;
+    margin: 150px auto 40px;
+    text-align: center;
+    color: #fff;
+    //color: #000;
+    width: 80%;
+  }
+
+  &__title-individually {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 30px;
+    margin: 20px auto;
+    text-align: center;
+    color: #fff;
+    //color: #000;
+    width: 80%;
+  }
+
+  &__title-strolls {
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 30px;
+    margin: 60px auto;
+    text-align: center;
+    color: #fff;
+    width: 80%;
+  }
+}

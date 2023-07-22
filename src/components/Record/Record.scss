@@ -14,7 +14,7 @@ input::-webkit-inner-spin-button {
   position: relative;
 
   &__cloce {
-    background: url(../../images/close.svg) no-repeat;
+    background: url(../../images/popap/close.svg) no-repeat;
     width: 50px;
     height: 50px;
     position: absolute;
@@ -25,7 +25,7 @@ input::-webkit-inner-spin-button {
   }
 
   &__cloce:hover {
-    animation: animClose 0.3s linear;
+    opacity: 0.6;
   }
 
   &__input-message {
@@ -34,16 +34,6 @@ input::-webkit-inner-spin-button {
     height: 120px;
     margin: 10px auto;
     padding: 10px;
-  }
-
-  @keyframes animClose {
-    0% {
-      transform: rotate(90deg);
-    }
-  }
-  &__logo-positioning {
-    display: block;
-    margin: 0 auto 40px;
   }
 
   &__title {

@@ -1,14 +1,14 @@
-import React from 'react';
-import './Services.scss';
-import Cart from '../Cart/Cart';
-import { dataServices } from '../../utils/constants';
+import React from "react";
+import "./Services.scss";
+import Card from "../Card/Card";
+import { dataServices } from "../../utils/constants";
 
 const Services = ({ onClick }) => {
   return (
     <section className="services">
       {dataServices.map((i, index) => {
         return (
-          <Cart
+          <Card
             onClick={onClick}
             key={index}
             image={i.img}

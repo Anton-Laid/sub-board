@@ -1,37 +1,37 @@
-import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-import './SwiperBlock.scss';
-import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
-import imageOne from '../../images/onefhoto.jpeg';
-import imageTwo from '../../images/fhoto-two.jpeg';
-import imageThree from '../../images/fhoto-three.jpeg';
-import imageFour from '../../images/fhoto-four.jpeg';
-import imageFive from '../../images/fhoto-five.jpeg';
-import imageSix from '../../images/11.jpeg';
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import "./SwiperBlock.scss";
+import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
+import imageOne from "../../images/photo/onefhoto.jpeg";
+import imageTwo from "../../images/photo/fhoto-two.jpeg";
+import imageThree from "../../images/photo/fhoto-three.jpeg";
+import imageFour from "../../images/photo/fhoto-four.jpeg";
+import imageFive from "../../images/photo/fhoto-five.jpeg";
+import imageSix from "../../images/photo/fhoto-six.jpeg";
 
 const SwiperBlock = () => {
   return (
     <div className="container">
       <Swiper
-        effect={'coverflow'}
+        effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
         loop={false}
-        slidesPerView={'auto'}
+        slidesPerView={"auto"}
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
           depth: 100,
           modifier: -10,
         }}
-        pagination={{ el: '.swiper-pagination', clickable: true }}
+        pagination={{ el: ".swiper-pagination", clickable: true }}
         navigation={{
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
           clickable: true,
         }}
         modules={[EffectCoverflow, Pagination, Navigation]}
@@ -67,7 +67,7 @@ const SwiperBlock = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div className="slide_image">
-            {' '}
+            {" "}
             <img src={imageFour} alt="slide_image" />
           </div>
         </SwiperSlide>

@@ -23,6 +23,7 @@ html {
   height: 148vh;
   transform: rotate(-1deg);
   animation: wave 40s linear infinite;
+  z-index: 1;
 }
 
 .wave-two {
@@ -33,6 +34,7 @@ html {
   height: 152vh;
   transform: rotate(7deg);
   animation: wave-two 40s linear infinite;
+  z-index: 1;
 }
 
 @keyframes wave {
