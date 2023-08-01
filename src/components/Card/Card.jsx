@@ -1,21 +1,21 @@
-import React from "react";
-import "./Card.scss";
+import React from 'react';
+import './Card.scss';
 
-const Card = ({ img, text, price, btnText, onClick, info }) => {
+const Card = (props) => {
   return (
     <section className="card">
       <div className="card__containner">
         <p className="card__title">
-          <img className="card__image" alt="фото" src={img} />
-          {text}
+          <img className="card__image" alt="фото" src={props.img} />
+          {props.text}
         </p>
         <div className="card__card-hidden">
-          <p className="card__title-in">{info}</p>
-          <p className="card__price">{price.one}</p>
-          <p className="card__price">{price.two}</p>
-          <p className="card__price">{price.twree}</p>
-          <button className="card__button" onClick={onClick}>
-            {btnText}
+          <p className="card__title-in">{props.info}</p>
+          <p className="card__price">{props.price.one}</p>
+          <p className="card__price">{props.price.two}</p>
+          <p className="card__price">{props.price.twree}</p>
+          <button className="card__button" onClick={props.onClick}>
+            {props.btnText}
           </button>
         </div>
       </div>

@@ -9,10 +9,11 @@
   display: flex;
   border: none;
   border-radius: 10px;
-  font-family: "Patrick Hand", cursive;
+  font-family: 'Patrick Hand', cursive;
   font-size: 24px;
   justify-content: center;
   align-items: center;
+  width: 60%;
 }
 
 .wrapper-position {
@@ -87,7 +88,7 @@
 }
 .wave-btn__waves:after,
 .wave-btn__waves:before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 50%;

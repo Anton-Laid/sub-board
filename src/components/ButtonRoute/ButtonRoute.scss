@@ -1,5 +1,4 @@
 .btn-route {
-  /* Variables */
   display: block;
   margin: 20px auto;
   width: 70%;
@@ -14,7 +13,14 @@
 
   &__link {
     text-decoration: none;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
   }
+}
+
+.btn-route {
+  width: 100%;
 }
 
 .button_top {
@@ -28,6 +34,7 @@
   color: var(--button_outline_color);
   transform: translateY(-0.2em);
   transition: transform 0.1s ease;
+  cursor: pointer;
 }
 
 .btn-route:hover .button_top {

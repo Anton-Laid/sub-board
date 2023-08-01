@@ -1,11 +1,11 @@
-import React from "react";
-import "./Root.scss";
-import SwiperBlock from "../SwiperBlock/SwiperBlock";
-import MyMap from "../MyMap/MyMap";
-import Footer from "../Footer/Footer";
-import Services from "../Services/Services";
-import Button from "../Button/Button";
-import ButtonRoute from "../ButtonRoute/ButtonRoute";
+import React from 'react';
+import './Root.scss';
+import SwiperBlock from '../SwiperBlock/SwiperBlock';
+import MyMap from '../MyMap/MyMap';
+import Footer from '../Footer/Footer';
+import Services from '../Services/Services';
+import Button from '../Button/Button';
+import ButtonRoute from '../ButtonRoute/ButtonRoute';
 
 const Root = ({ onClick }) => {
   return (
@@ -28,15 +28,15 @@ const Root = ({ onClick }) => {
         берегу и насладиться каждым мгновением здесь и сейчас. Обратитесь к нам,
         чтобы забронировать свое место на сплаве и начать свое приключение!
       </p>
-      <Button title={"TELEGRAM"} className={"wrapper-position"} />
+      <Button title={'TELEGRAM'} className={'wrapper-position'} />
       <h4 className="root__telegram">
         Подпишитесь на нашу группу, там все свежие новости &#128525;
       </h4>
 
-      <ButtonRoute text={"Прогулка по маршрутам"} route={"/strolls"} />
+      <ButtonRoute text={'Прогулка по маршрутам'} route={'/strolls'} />
       <ButtonRoute
-        text={"Что взять с собой на прогулку ? "}
-        route={"/questions"}
+        text={'Что взять с собой на прогулку ? '}
+        route={'/questions'}
       />
 
       <SwiperBlock />

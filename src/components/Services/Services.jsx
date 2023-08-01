@@ -1,7 +1,7 @@
-import React from "react";
-import "./Services.scss";
-import Card from "../Card/Card";
-import { dataServices } from "../../utils/constants";
+import React from 'react';
+import './Services.scss';
+import Card from '../Card/Card';
+import { dataServices } from '../../utils/constants';
 
 const Services = ({ onClick }) => {
   return (

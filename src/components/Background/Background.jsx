@@ -11,7 +11,7 @@ const Background = ({ children }) => {
       {dataBackground.map((i, index) => {
         return <img src={i.src} alt={i.alt} className={i.class} key={index} />;
       })}
-      {romdom > 9.6 ? <Secret /> : ''}
+      {romdom > 9.9 ? <Secret /> : ''}
       {children}
     </section>
   );

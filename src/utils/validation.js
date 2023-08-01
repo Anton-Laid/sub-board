@@ -4,7 +4,6 @@ const regexName = /^[a-zA-Zа-яА-Я\sё-]+$/;
 
 export function validatePhone(phone) {
   if (phone !== undefined) {
-    console.log(phone.length);
     if (phone.length === 0) {
       return { invalid: true, message: 'Это поле не должно быть пустым!' };
     } else if (!regexPhone.test(phone)) {
