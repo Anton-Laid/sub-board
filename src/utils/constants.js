@@ -6,14 +6,17 @@ import bubble from "../images/background/bubble.svg";
 import ball from "../images/background/ball.svg";
 import ballSos from "../images/background/sos.svg";
 import fishs from "../images/background/fishs.svg";
-import fernOne from "../images/background/one.svg";
 import servicesImgOne from "../images/image-cards/1.jpeg";
 import servicesImgTwo from "../images/image-cards/2.jpeg";
 import servicesImgThree from "../images/image-cards/3.jpeg";
-import servicesImgFour from "../images/image-cards/4.jpeg";
-import servicesImgFive from "../images/image-cards/5.jpeg";
 import waveOne from "../images/background/wave-one.svg";
 import waveTwo from "../images/background/wave-two.svg";
+import subBordOne from "../images/background/subBord.png";
+import sub1 from "../images/other/sub1.jpeg";
+import sub2 from "../images/other/sub2.jpeg";
+import sub3 from "../images/other/sub3.jpeg";
+import sub4 from "../images/other/sab4.jpeg";
+import sub5 from "../images/other/sub5.jpeg";
 
 const WaveArr = [
   {
@@ -93,15 +96,15 @@ const dataBackground = [
     alt: "лист",
   },
   {
-    src: fern,
-    class: "background__fern background__fern_position-bottom",
+    src: subBordOne,
+    class: "background__fern_position-bottom",
     alt: "лист",
   },
-  {
-    src: fernOne,
-    class: "background__fern background__fern_position-bottom-rigth",
-    alt: "лист",
-  },
+  // {
+  //   src: subBordTwo,
+  //   class: "background__fern background__fern_position-bottom-rigth",
+  //   alt: "лист",
+  // },
 ];
 
 const handleMessage = (values, checkbox) => {
@@ -120,42 +123,98 @@ const URI_BOT = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 const dataServices = [
   {
     img: servicesImgOne,
-    text: "Cплавы на субботу и воскресенье",
-    price: "1800₽/чел.",
-    time: "3 ч 30 м",
+    text: "Персональное обучение на Cап борде",
+    info: "Одного часа хватит для полного обучени.",
+    price: { one: "1 ч 1800₽/чел." },
+    btnText: "Записаться!",
   },
   {
     img: servicesImgTwo,
-    text: "Прогулка на катере",
-    price: "4000₽/чел.",
-    time: "1 ч",
+    text: "Аренда Cап бордов будни",
+    price: {
+      one: "1 ч 700₽/чел.",
+      two: "2 ч 1000₽/чел.",
+      twree: "Весь день 1500₽/чел.",
+    },
+    btnText: "Записаться!",
   },
   {
     img: servicesImgThree,
-    text: "Прогулка на катере",
-    price: "2500₽/чел.",
-    time: "30 м",
+    text: "Аренда Сап бордов выходные",
+    price: {
+      one: "1 часа 900₽/чел.",
+      two: "2 часа/1500₽/чел.",
+      twree: "Весь день 2000₽/чел.",
+    },
+    btnText: "Записаться!",
   },
   {
-    img: servicesImgFour,
-    text: "Катание на водных лыжах и водной ватрушке",
-    price: "2500₽/чел.",
-    time: " 30 м",
+    img: sub1,
+    text: "TOURUS TS-002S",
+    price: {
+      one: "TOURUS TS-002S 335x84x15",
+      two: "19000₽",
+    },
+    btnText: "Заказать!",
   },
   {
-    img: servicesImgFive,
-    text: "Катание на водных лыжах и водной ватрушке",
-    price: "4000₽/чел.",
-    time: " 1 ч",
+    img: sub2,
+    text: "TOURUS TS-001S",
+    price: {
+      one: "TOURUS TS-001S 335x84x15",
+      two: "2 ПОЛНОЦЕННЫХ СЛОЯ",
+      twree: "23000₽",
+    },
+    btnText: "Заказать!",
   },
+  {
+    img: sub3,
+    text: "Sub Bord 1",
+    price: {
+      one: "TOURUS TS-002S 335x84x15",
+      two: "19500₽",
+    },
+    btnText: "Заказать!",
+  },
+  {
+    img: sub4,
+    text: "Sub Bord 1",
+    price: {
+      one: "TOURUS TS-002S 335x84x15",
+      two: "25000₽",
+    },
+    btnText: "Заказать!",
+  },
+  {
+    img: sub5,
+    text: "Sub Bord 1",
+    price: {
+      one: "TOURUS TS-002S 335x84x15",
+      two: "22000₽",
+    },
+    btnText: "Заказать!",
+  },
+  // {
+  //   img: servicesImgFour,
+  //   text: "Катание на водных лыжах и водной ватрушке",
+  //   price: "2500₽/чел.",
+  //   time: " 30 м",
+  // },
+  // {
+  //   img: servicesImgFive,
+  //   text: "Катание на водных лыжах и водной ватрушке",
+  //   price: "4000₽/чел.",
+  //   time: " 1 ч",
+  // },
 ];
 
 const dataCeckbox = [
-  { name: "Cплавы на субботу и воскресенье", checked: false, id: 1 },
-  { name: "Прогулка на катере", checked: false, id: 2 },
-  { name: "Прогулка на катере", checked: false, id: 3 },
-  { name: "Катание на водных лыжах и водной ватрушке", checked: false, id: 4 },
-  { name: "Катание на водных лыжах и водной ватрушке", checked: false, id: 5 },
+  { name: "Персональное обучение на Cап борде", checked: false, id: 1 },
+  { name: "Аренда Cап бордов будни", checked: false, id: 2 },
+  { name: "Аренда Сап бордов выходные", checked: false, id: 3 },
+  { name: "Cплавы на субботу и воскресенье", checked: false, id: 4 },
+  { name: "Заказать Сап борд", checked: false, id: 5 },
+  // { name: "Катание на водных лыжах и водной ватрушке", checked: false, id: 5 },
 ];
 
 export {

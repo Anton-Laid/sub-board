@@ -4,6 +4,7 @@ import telegram from "../../images/networks/telegram.png";
 import whatsapp from "../../images/networks/whatsapp.png";
 import instagram from "../../images/networks/instagram.png";
 import phone from "../../images/networks/phone.png";
+import vk from "../../images/networks/vk.png";
 
 const Footer = () => {
   return (
@@ -18,7 +19,7 @@ const Footer = () => {
         >
           <div id="telegram" className="footer__social-btn footer__flex-center">
             <img className="footer__icon" src={telegram} alt="telegram" />
-            <span className="footer__text">@example</span>
+            <span className="footer__text">supboardpushchino</span>
           </div>
         </a>
 
@@ -30,7 +31,7 @@ const Footer = () => {
         >
           <div id="whatsapp" className="footer__social-btn footer__flex-center">
             <img className="footer__icon" src={whatsapp} alt="whatsapp" />
-            <span className="footer__text">in/example</span>
+            <span className="footer__text">Евгений</span>
           </div>
         </a>
 
@@ -45,11 +46,14 @@ const Footer = () => {
             className="footer__social-btn footer__flex-center"
           >
             <img className="footer__icon" src={instagram} alt="instagram" />
-            <span className="footer__text">example</span>
+            <span className="footer__text">sup_prokat_pushchino</span>
           </div>
         </a>
 
-        <div id="github" className="footer__social-btn footer__flex-center">
+        <div
+          id="github"
+          className="footer__social-btn footer__flex-center footer__phone"
+        >
           <img className="footer__icon" src={phone} alt="phone" />
           <span className="footer__text">+7(926)155-70-11</span>
         </div>
@@ -60,12 +64,9 @@ const Footer = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <div
-            id="instagram"
-            className="footer__social-btn footer__flex-center"
-          >
-            <img className="footer__icon" src={instagram} alt="vk" />
-            <span className="footer__text">example</span>
+          <div id="vk" className="footer__social-btn footer__flex-center">
+            <img className="footer__icon" src={vk} alt="vk" />
+            <span className="footer__text">Сап Клуб-Пущино</span>
           </div>
         </a>
 

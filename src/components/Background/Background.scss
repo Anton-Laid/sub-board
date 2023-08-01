@@ -11,7 +11,6 @@
     height: 220px;
     background-repeat: no-repeat;
   }
-
   &__grass_position {
     position: absolute;
     transform: rotate(20deg);
@@ -225,47 +224,47 @@
 
   &__fern_position-bottom {
     position: absolute;
-    bottom: -19.5vh;
-    right: 2vw;
-    width: 300px;
-    height: 300px;
-    transform: rotate(-10deg);
-    animation: fern-bottom 50s linear infinite;
+    bottom: -24.5vh;
+    right: -8vw;
+    width: 400px;
+    height: 400px;
+    transform: rotate(-35deg);
+    // animation: fern-bottom 50s linear infinite;
   }
 
-  &__fern_position-bottom-rigth {
-    transform: rotate(114deg);
-    position: absolute;
-    bottom: -146px;
-    right: -7vw;
-    width: 300px;
-    height: 300px;
-    animation: fern-bottom-rigth 50s linear infinite;
-  }
+  // &__fern_position-bottom-rigth {
+  //   transform: rotate(-60deg);
+  //   position: absolute;
+  //   bottom: -150px;
+  //   right: -7vw;
+  //   width: 300px;
+  //   height: 300px;
+  //   animation: fern-bottom-rigth 50s linear infinite;
+  // }
 
-  @keyframes fern-bottom {
-    0% {
-      transform: rotate(-10deg);
-    }
-    50% {
-      transform: rotate(5deg);
-    }
-    100% {
-      transform: rotate(-10deg);
-    }
-  }
+  // @keyframes fern-bottom {
+  //   0% {
+  //     transform: rotate(-10deg);
+  //   }
+  //   50% {
+  //     transform: rotate(5deg);
+  //   }
+  //   100% {
+  //     transform: rotate(-10deg);
+  //   }
+  // }
 
-  @keyframes fern-bottom-rigth {
-    0% {
-      transform: rotate(114deg);
-    }
-    50% {
-      transform: rotate(100deg);
-    }
-    100% {
-      transform: rotate(114deg);
-    }
-  }
+  // @keyframes fern-bottom-rigth {
+  //   0% {
+  //     transform: rotate(-60deg);
+  //   }
+  //   50% {
+  //     transform: rotate(-78deg);
+  //   }
+  //   100% {
+  //     transform: rotate(-60deg);
+  //   }
+  // }
 
   &__ball-sos {
     width: 60px;
@@ -402,19 +401,14 @@
       }
     }
 
-    &__fern_position-bottom {
-      position: absolute;
-      bottom: -177px;
-      right: 2vw;
-      width: 240px;
-      height: 240px;
-    }
+    // &__fern_position-bottom {
+    //   width: 240px;
+    //   height: 240px;
+    // }
 
-    &__fern_position-bottom-rigth {
-      bottom: -146px;
-      right: -15vw;
-      width: 270px;
-      height: 270px;
+    &__fern_position-bottom {
+      width: 320px;
+      height: 320px;
     }
 
     &__ball_position-bottom {
@@ -541,16 +535,13 @@
     }
 
     &__fern_position-bottom {
-      position: absolute;
-      bottom: -177px;
-      right: 2vw;
+      bottom: -18.5vh;
+      right: -3vh;
       width: 240px;
       height: 240px;
     }
 
     &__fern_position-bottom-rigth {
-      bottom: -79px;
-      right: -30vw;
       width: 270px;
       height: 270px;
     }
@@ -659,9 +650,6 @@
     }
 
     &__fern_position-bottom {
-      position: absolute;
-      bottom: -185px;
-      right: -16vw;
       width: 240px;
       height: 240px;
     }

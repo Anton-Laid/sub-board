@@ -1,44 +1,26 @@
 import React from "react";
 import "./Card.scss";
-import Button from "../Button/Button";
 
-const Card = ({ image, text, price, time, onClick }) => {
+const Card = ({ img, text, price, btnText, onClick, info }) => {
   return (
-    <section className="cart">
-      <img src={image} alt="фото" className="cart__image" />
-      <ul>
-        <li className="cart__text">{text}</li>
-        <li className="cart__price">{price}</li>
-        <li className="cart__time">{time}</li>
-      </ul>
-
-      <button className="cart__button" onClick={onClick}>
-        Записаться !
-      </button>
+    <section className="card">
+      <div className="card__containner">
+        <p className="card__title">
+          <img className="card__image" alt="фото" src={img} />
+          {text}
+        </p>
+        <div className="card__card-hidden">
+          <p className="card__title-in">{info}</p>
+          <p className="card__price">{price.one}</p>
+          <p className="card__price">{price.two}</p>
+          <p className="card__price">{price.twree}</p>
+          <button className="card__button" onClick={onClick}>
+            {btnText}
+          </button>
+        </div>
+      </div>
+      <div className="card__card-border"></div>
     </section>
-    // <div className="card">
-    //   <img src={image} alt="фото" className="card-image" />
-    //   <div className="category">{text}</div>
-    //   <div className="heading">{price}</div>
-    //   <button className="card__button" onClick={onClick}>
-    //     Записаться !
-    //   </button>
-    // </div>
-
-    // <div className="card__container">
-    //   <div className="card__card">
-    //     <p className="title">Card title</p>
-    //     <div className="card-hidden">
-    //       <p className="title-in">Card title</p>
-    //       <p>
-    //         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at
-    //         est orci. Nam molestie pellentesque mi nec lacinia.
-    //       </p>
-    //       <a className="button">Button</a>
-    //     </div>
-    //   </div>
-    //   <div className="card-border"></div>
-    // </div>
   );
 };
 

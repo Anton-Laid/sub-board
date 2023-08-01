@@ -67,7 +67,6 @@ const SwiperBlock = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div className="slide_image">
-            {" "}
             <img src={imageFour} alt="slide_image" />
           </div>
         </SwiperSlide>

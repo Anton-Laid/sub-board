@@ -7,16 +7,7 @@ const Services = ({ onClick }) => {
   return (
     <section className="services">
       {dataServices.map((i, index) => {
-        return (
-          <Card
-            onClick={onClick}
-            key={index}
-            image={i.img}
-            text={i.text}
-            price={i.price}
-            time={i.time}
-          />
-        );
+        return <Card onClick={onClick} key={index} {...i} />;
       })}
     </section>
   );

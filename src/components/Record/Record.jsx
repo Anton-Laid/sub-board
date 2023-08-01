@@ -102,6 +102,9 @@ const Record = ({ hendleClosePopup }) => {
             onChange={handleChange}
             placeholder=""
           />
+          <p className="record__phone">
+            Связаться по телефону: +7(926)155-70-11
+          </p>
           <button
             className="record__btn-save"
             type="submit"

@@ -75,17 +75,24 @@
     padding: 2px;
     width: 100px;
   }
+
+  &__text {
+    font-size: 14px;
+  }
 }
 
-@media (max-width: 389px) {
+@media (max-width: 480px) {
   .footer {
-    &__social-links {
-      justify-content: start;
-      flex-direction: column;
+    span {
+      display: none;
     }
 
-    &__social-btn span {
-      font-style: 14px;
+    &__phone {
+      display: none;
+    }
+
+    &__social-btn:hover {
+      width: 50px;
     }
   }
 
