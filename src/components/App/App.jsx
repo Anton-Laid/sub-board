@@ -1,13 +1,13 @@
-import './App.scss';
-import Background from '../Background/Background';
-import { Routes, Route } from 'react-router-dom';
-import { useState } from 'react';
-import Root from '../Root/Root';
-import Popup from '../Popap/Popap';
-import { WaveArr } from '../../utils/constants';
-import Record from '../Record/Record';
-import { Strolls } from '../Strolls/Strolls';
-import Questions from '../Questions/Questions';
+import "./App.scss";
+import Background from "../Background/Background";
+import { Routes, Route } from "react-router-dom";
+import { useState } from "react";
+import Root from "../Root/Root";
+import Popup from "../Popap/Popap";
+import { WaveArr } from "../../utils/constants";
+import Record from "../Record/Record";
+import { Strolls } from "../Strolls/Strolls";
+import Questions from "../Questions/Questions";
 
 function App() {
   const [popap, setPopap] = useState(false);
@@ -25,6 +25,7 @@ function App() {
           <Route path="/" element={<Root onClick={hendleClosePopup} />} />
           <Route path="/strolls" element={<Strolls />} />
           <Route path="/questions" element={<Questions />} />
+          <Route path="*" element={<Root onClick={hendleClosePopup} />} />v
         </Routes>
 
         <Popup

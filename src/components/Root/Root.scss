@@ -37,14 +37,13 @@
 
   &__title {
     font-family: "Nunito", sans-serif;
-    font-size: 72px;
+    font-size: 60px;
     font-weight: 900;
     line-height: 64px;
     width: 40%;
     margin: 110px auto 40px;
     color: #fff;
     text-align: center;
-    //color: #000;
   }
 
   &__paragraph {
@@ -53,9 +52,8 @@
     line-height: 40px;
     margin: 20px auto;
     color: #fff;
-    width: 80%;
+    width: 70%;
     text-align: justify;
-    //color: #000;
   }
 
   &__telegram {
@@ -65,18 +63,8 @@
     color: #fff;
     text-align: center;
     margin: 40px auto 0;
-    width: 80%;
+    width: 70%;
   }
-
-  // &__title-strolls {
-  //   font-size: 16px;
-  //   font-weight: 900;
-  //   line-height: 30px;
-  //   margin: 60px auto;
-  //   text-align: center;
-  //   color: #fff;
-  //   width: 80%;
-  // }
 
   &__title-route {
     font-size: 24px;
@@ -110,7 +98,24 @@
       margin: 80px auto 40px;
       color: #fff;
       text-align: center;
-      //color: #000;
+    }
+
+    &__paragraph {
+      font-size: 18px;
+      width: 90%;
+    }
+
+    &__telegram {
+      font-size: 18px;
+      width: 90%;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .root {
+    &__title {
+      font-size: 32px;
     }
   }
 }

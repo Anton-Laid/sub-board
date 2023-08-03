@@ -1,18 +1,18 @@
-import React, { useState } from 'react';
-import { CHAT_ID, handleMessage, dataCeckbox } from '../../utils/constants';
-import { useFormAndValidation } from '../../hooks/validation';
-import { validatePhone, validateName } from '../../utils/validation';
-import Checkbox from '../Checkbox/Checkbox';
-import { postMessage } from '../../utils/Api';
-import './Record.scss';
-import checkMark from '../../images/popap/gif.gif';
+import React, { useState } from "react";
+import { CHAT_ID, handleMessage, dataCeckbox } from "../../utils/constants";
+import { useFormAndValidation } from "../../hooks/validation";
+import { validatePhone, validateName } from "../../utils/validation";
+import Checkbox from "../Checkbox/Checkbox";
+import { postMessage } from "../../utils/Api";
+import "./Record.scss";
+import checkMark from "../../images/popap/free.png";
 
 const Record = ({ hendleClosePopup, notification, setNotification }) => {
   const { values, isValid, handleChange } = useFormAndValidation();
   const [data, setData] = useState(dataCeckbox);
 
   const handleCheckbox = (item) => {
-    return item.map((i) => (i.checked ? i.name : ''));
+    return item.map((i) => (i.checked ? i.name : ""));
   };
 
   const updateCheckStatus = (index) => {
@@ -43,7 +43,7 @@ const Record = ({ hendleClosePopup, notification, setNotification }) => {
               id="record-name"
               name="name"
               type="text"
-              value={values.name || ''}
+              value={values.name || ""}
               minLength="2"
               maxLength="40"
               onChange={handleChange}
@@ -52,7 +52,7 @@ const Record = ({ hendleClosePopup, notification, setNotification }) => {
             />
             <span
               className={`record__input-error  ${
-                isValid ? '' : 'record__input-error_activ'
+                isValid ? "" : "record__input-error_activ"
               }`}
             >
               {validateName(values.name).message}
@@ -66,13 +66,13 @@ const Record = ({ hendleClosePopup, notification, setNotification }) => {
               name="phone"
               type="number"
               required
-              value={values.phone || ''}
+              value={values.phone || ""}
               placeholder="+7(000)000-00-00"
               onChange={handleChange}
             />
             <span
               className={`record__input-error  ${
-                isValid ? '' : 'record__input-error_activ'
+                isValid ? "" : "record__input-error_activ"
               }`}
             >
               {validatePhone(values.phone).message}
@@ -94,7 +94,7 @@ const Record = ({ hendleClosePopup, notification, setNotification }) => {
           <textarea
             className="record__input-message"
             name="message"
-            value={values.message || ''}
+            value={values.message || ""}
             rows="3"
             type="text"
             onChange={handleChange}
@@ -113,7 +113,7 @@ const Record = ({ hendleClosePopup, notification, setNotification }) => {
             }
           >
             Записаться
-          </button>{' '}
+          </button>{" "}
           <div className="record__cloce" onClick={hendleClosePopup} />
         </form>
       ) : (

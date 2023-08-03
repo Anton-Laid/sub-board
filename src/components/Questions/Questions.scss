@@ -18,7 +18,7 @@
 
 .questions {
   overflow-y: scroll;
-  padding-bottom: 50px;
+  padding-bottom: 250px;
   position: absolute;
   top: 0;
   right: 0;
@@ -33,9 +33,9 @@
     margin: 100px auto 40px;
     font-size: 24px;
     font-weight: 900;
-    line-height: 30px;
+    line-height: 38px;
     margin: 40px auto;
-    text-align: center;
+    text-align: justify;
     color: #fff;
     //color: #000;
     width: 80%;
@@ -50,5 +50,19 @@
     color: #fff;
     //color: #000;
     width: 80%;
+  }
+}
+
+@media (max-width: 700px) {
+  .questions {
+    &__text {
+      margin: 100px auto 40px;
+      font-size: 18px;
+      width: 90%;
+    }
+
+    &__text-explanation {
+      font-size: 18px;
+    }
   }
 }

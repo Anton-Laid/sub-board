@@ -13,7 +13,7 @@ const Footer = () => {
       <div className="footer__social-links">
         <a
           className="footer__link"
-          href="https://www.squarespace.com/"
+          href="https://t.me/supboardpushchino"
           target="_blank"
           rel="noreferrer"
         >

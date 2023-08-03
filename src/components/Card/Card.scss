@@ -86,9 +86,10 @@
     padding: 8px;
     border-radius: 24px;
     font-weight: 600;
-    background-color: #8af3e5;
+    background-color: #5bc0eb;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
+    color: #fff;
   }
 
   &__button:hover {
@@ -107,7 +108,7 @@
 
 @media (max-width: 700px) {
   .card {
-    width: 60%;
+    width: 85%;
 
     &__containner {
       width: 100%;
@@ -117,7 +118,7 @@
 
 @media (max-width: 480px) {
   .card {
-    width: 90%;
+    width: 99%;
 
     &__containner {
       width: 100%;
