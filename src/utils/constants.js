@@ -29,6 +29,8 @@ const WaveArr = [
   },
 ];
 
+const newPromise = "promis";
+
 const dataBackground = [
   {
     src: grass,
@@ -225,4 +227,5 @@ export {
   URI_BOT,
   dataServices,
   WaveArr,
+  newPromise,
 };
