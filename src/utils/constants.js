@@ -18,6 +18,8 @@ import sub3 from "../images/other/sub3.jpeg";
 import sub4 from "../images/other/sab4.jpeg";
 import sub5 from "../images/other/sub5.jpeg";
 
+const newConstant = 10;
+
 const WaveArr = [
   {
     wave: waveOne,
@@ -225,4 +227,5 @@ export {
   URI_BOT,
   dataServices,
   WaveArr,
+  newConstant,
 };
