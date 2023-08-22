@@ -1,0 +1,10 @@
+npm ERR! code ENOENT
+npm ERR! syscall stat
+npm ERR! path /Users/antonlaid/.npm/_cacache/content-v2/sha512/8b/8c/13edd1bc8805d2bba5d77dffae27e57312622278aa06f8a61cb3d8b0a9886bd9889684db225d1a82b442704500c03a975b964107dd5cb6c6eb974fbe9bb1
+npm ERR! errno ENOENT
+npm ERR! enoent Invalid response body while trying to fetch https://registry.npmjs.org/@storybook%2fblocks: ENOENT: no such file or directory, stat '/Users/antonlaid/.npm/_cacache/content-v2/sha512/8b/8c/13edd1bc8805d2bba5d77dffae27e57312622278aa06f8a61cb3d8b0a9886bd9889684db225d1a82b442704500c03a975b964107dd5cb6c6eb974fbe9bb1'
+npm ERR! enoent This is related to npm not being able to find a file.
+npm ERR! enoent 
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/antonlaid/.npm/_logs/2023-08-12T19_45_57_123Z-debug-0.log
