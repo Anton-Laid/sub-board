@@ -5,31 +5,29 @@ const regexName = /^[a-zA-Zа-яА-Я\sё-]+$/;
 export function validatePhone(phone) {
   if (phone !== undefined) {
     if (phone.length === 0) {
-      return { invalid: true, message: "Это поле не должно быть пустым!" };
+      return { invalid: false, message: "Это поле не должно быть пустым!" };
     } else if (!regexPhone.test(phone)) {
-      return { invalid: true, message: "Неверный формат телефона!" };
+      return { invalid: false, message: "Неверный формат телефона!" };
     } else if (!regexPhone.test(phone.toLowerCase())) {
-      return { invalid: true, message: "Неверный формат телефона!" };
-    } else if (regexPhone.test(phone.toLowerCase() || phone.length === 11)) {
-      return { invalid: false, message: "" };
+      return { invalid: false, message: "Неверный формат телефона!" };
+    } else if (regexPhone.test(phone.toLowerCase() || phone.length === 17)) {
+      return { invalid: true, message: "" };
     }
-  } else {
-    return { invalid: true, message: "" };
   }
 }
 
 export function validateName(name) {
   if (name !== undefined) {
     if (name.length === 0) {
-      return { invalid: true, message: "Это поле не должно быть пустым!" };
+      return { invalid: false, message: "Это поле не должно быть пустым!" };
     } else if (!regexName.test(name.toLowerCase())) {
       return {
-        invalid: true,
+        invalid: false,
         message:
           "Имя должно содержать только латиницу, кириллицу, пробел или дефис!",
       };
     } else if (regexName.test(name.toLowerCase())) {
-      return { invalid: false, message: "" };
+      return { invalid: true, message: "" };
     }
   } else {
     return { invalid: true, message: "" };

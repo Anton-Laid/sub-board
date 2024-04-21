@@ -12,11 +12,6 @@ import servicesImgThree from "../images/image-cards/3.jpeg";
 import waveOne from "../images/background/wave-one.svg";
 import waveTwo from "../images/background/wave-two.svg";
 import subBordOne from "../images/background/subBord.png";
-import sub1 from "../images/other/sub1.jpeg";
-import sub2 from "../images/other/sub2.jpeg";
-import sub3 from "../images/other/sub3.jpeg";
-import sub4 from "../images/other/sab4.jpeg";
-import sub5 from "../images/other/sub5.jpeg";
 
 const newConstant = 10;
 
@@ -104,11 +99,6 @@ const dataBackground = [
     class: "background__fern_position-bottom",
     alt: "лист",
   },
-  // {
-  //   src: subBordTwo,
-  //   class: "background__fern background__fern_position-bottom-rigth",
-  //   alt: "лист",
-  // },
 ];
 
 const handleMessage = (values, checkbox) => {
@@ -152,64 +142,6 @@ const dataServices = [
     },
     btnText: "Записаться!",
   },
-  {
-    img: sub1,
-    text: "TOURUS TS-002S",
-    price: {
-      one: "TOURUS TS-002S 335x84x15",
-      two: "19000₽",
-    },
-    btnText: "Заказать!",
-  },
-  {
-    img: sub2,
-    text: "TOURUS TS-001S",
-    price: {
-      one: "TOURUS TS-001S 335x84x15",
-      two: "2 ПОЛНОЦЕННЫХ СЛОЯ",
-      twree: "23000₽",
-    },
-    btnText: "Заказать!",
-  },
-  {
-    img: sub3,
-    text: "Sub Bord 1",
-    price: {
-      one: "TOURUS TS-002S 335x84x15",
-      two: "19500₽",
-    },
-    btnText: "Заказать!",
-  },
-  {
-    img: sub4,
-    text: "Sub Bord 1",
-    price: {
-      one: "TOURUS TS-002S 335x84x15",
-      two: "25000₽",
-    },
-    btnText: "Заказать!",
-  },
-  {
-    img: sub5,
-    text: "Sub Bord 1",
-    price: {
-      one: "TOURUS TS-002S 335x84x15",
-      two: "22000₽",
-    },
-    btnText: "Заказать!",
-  },
-  // {
-  //   img: servicesImgFour,
-  //   text: "Катание на водных лыжах и водной ватрушке",
-  //   price: "2500₽/чел.",
-  //   time: " 30 м",
-  // },
-  // {
-  //   img: servicesImgFive,
-  //   text: "Катание на водных лыжах и водной ватрушке",
-  //   price: "4000₽/чел.",
-  //   time: " 1 ч",
-  // },
 ];
 
 const dataCeckbox = [
@@ -217,8 +149,26 @@ const dataCeckbox = [
   { name: "Аренда Cап бордов будни", checked: false, id: 2 },
   { name: "Аренда Сап бордов выходные", checked: false, id: 3 },
   { name: "Cплавы на субботу и воскресенье", checked: false, id: 4 },
-  { name: "Заказать Сап борд", checked: false, id: 5 },
-  // { name: "Катание на водных лыжах и водной ватрушке", checked: false, id: 5 },
+];
+
+const maskPhone = [
+  "+",
+  "7",
+  "(",
+  /[1-9]/,
+  /\d/,
+  /\d/,
+  ")",
+  " ",
+  /\d/,
+  /\d/,
+  /\d/,
+  "-",
+  /\d/,
+  /\d/,
+  "-",
+  /\d/,
+  /\d/,
 ];
 
 export {
@@ -230,5 +180,6 @@ export {
   dataServices,
   WaveArr,
   newPromise,
-  newConstant
+  newConstant,
+  maskPhone,
 };

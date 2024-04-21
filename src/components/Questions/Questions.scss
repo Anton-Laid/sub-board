@@ -3,17 +3,17 @@
 }
 
 .questions::-webkit-scrollbar-track {
-  background: #125369;
+  background: var(--grass);
 }
 
 .questions::-webkit-scrollbar-thumb {
-  background: #8af3e5;
+  background: var(--birch-color);
   border-radius: 8px;
-  border: 3px solid #8af3e5;
+  border: 3px solid var(--birch-color);
 }
 
 .questions::-webkit-scrollbar-thumb:hover {
-  background: #8af3e5;
+  background: var(--birch-color);
 }
 
 .questions {
@@ -27,7 +27,7 @@
   z-index: 5;
   width: 100%;
   height: 100vh;
-  background-color: rgba($color: #000000, $alpha: 0.38);
+  background-color: rgba($color: var(--black), $alpha: 0.38);
 
   &__text {
     margin: 100px auto 40px;
@@ -36,8 +36,7 @@
     line-height: 38px;
     margin: 40px auto;
     text-align: justify;
-    color: #fff;
-    //color: #000;
+    color: var(--white);
     width: 80%;
   }
 
@@ -47,8 +46,7 @@
     line-height: 30px;
     margin: 20px auto;
     text-align: justify;
-    color: #fff;
-    //color: #000;
+    color: var(--white);
     width: 80%;
   }
 }

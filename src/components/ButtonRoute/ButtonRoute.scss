@@ -3,8 +3,8 @@
   margin: 20px auto;
   width: 70%;
   --button_radius: 0.75em;
-  --button_color: rgb(137, 222, 204);
-  --button_outline_color: #000000;
+  --button_color: var(--birch-light-color);
+  --button_outline_color: var(--black);
   font-size: 19px;
   font-weight: bold;
   border: none;
@@ -38,12 +38,10 @@
 }
 
 .btn-route:hover .button_top {
-  /* Pull the button upwards when hovered */
   transform: translateY(-0.33em);
 }
 
 .btn-route:active .button_top {
-  /* Push the button downwards when pressed */
   transform: translateY(0);
 }
 

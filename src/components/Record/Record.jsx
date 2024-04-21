@@ -1,5 +1,11 @@
-import React, { useState } from "react";
-import { CHAT_ID, handleMessage, dataCeckbox } from "../../utils/constants";
+import TextMaskInput from "react-text-mask";
+import { useState } from "react";
+import {
+  CHAT_ID,
+  handleMessage,
+  dataCeckbox,
+  maskPhone,
+} from "../../utils/constants";
 import { useFormAndValidation } from "../../hooks/validation";
 import { validatePhone, validateName } from "../../utils/validation";
 import Checkbox from "../Checkbox/Checkbox";
@@ -9,6 +15,7 @@ import checkMark from "../../images/popap/free.png";
 
 const Record = ({ hendleClosePopup, notification, setNotification }) => {
   const { values, isValid, handleChange } = useFormAndValidation();
+  const [tel, setTel] = useState("");
   const [data, setData] = useState(dataCeckbox);
 
   const handleCheckbox = (item) => {
@@ -27,7 +34,10 @@ const Record = ({ hendleClosePopup, notification, setNotification }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    postMessage(CHAT_ID, handleMessage(values, handleCheckbox(data)));
+    postMessage(
+      CHAT_ID,
+      handleMessage({ name: values.name, phone: tel }, handleCheckbox(data))
+    );
     setNotification(false);
   };
 
@@ -60,22 +70,21 @@ const Record = ({ hendleClosePopup, notification, setNotification }) => {
           </label>
           <label className="record__lable" htmlFor="record-email">
             Телефон
-            <input
+            <TextMaskInput
+              name="tel"
               className="record__input record__input-phone"
-              id="record-phone"
-              name="phone"
-              type="number"
-              required
-              value={values.phone || ""}
-              placeholder="+7(000)000-00-00"
-              onChange={handleChange}
+              autoComplete="number"
+              placeholder="+7(___)___-__-__"
+              value={tel || ""}
+              onChange={(e) => setTel(e.target.value)}
+              mask={maskPhone}
             />
             <span
               className={`record__input-error  ${
-                isValid ? "" : "record__input-error_activ"
+                !validatePhone(tel).invalid && "record__input-error_activ"
               }`}
             >
-              {validatePhone(values.phone).message}
+              {validatePhone(tel).message}
             </span>
           </label>
           <div className="record__container-checkbox">
@@ -98,7 +107,7 @@ const Record = ({ hendleClosePopup, notification, setNotification }) => {
             rows="3"
             type="text"
             onChange={handleChange}
-            placeholder=""
+            placeholder="Написать комментарии к заказу"
           />
           <p className="record__phone">
             Связаться по телефону: +7(926)155-70-11
@@ -107,13 +116,13 @@ const Record = ({ hendleClosePopup, notification, setNotification }) => {
             className="record__btn-save"
             type="submit"
             disabled={
-              !isValid ||
-              validatePhone(values.phone).invalid ||
-              validateName(values.name).invalid
+              !validatePhone(tel).invalid ||
+              !validateName(values.name).invalid ||
+              !data.some((i) => i.checked === true)
             }
           >
             Записаться
-          </button>{" "}
+          </button>
           <div className="record__cloce" onClick={hendleClosePopup} />
         </form>
       ) : (

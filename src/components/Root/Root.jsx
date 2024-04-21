@@ -20,7 +20,11 @@ const Root = ({ onClick }) => {
         уже через 15-20 минут. (время не включается в период аренды SUP-доски,
         доп. оплат нет)
       </p>
-      <Button title={"TELEGRAM"} className={"wrapper-position"} />
+      <Button
+        title={"TELEGRAM"}
+        className={"wrapper-position"}
+        src="https://t.me/supboardpushchino"
+      />
       <h4 className="root__telegram">
         Подпишитесь в нашу группу, там все свежие новости &#128525;
       </h4>

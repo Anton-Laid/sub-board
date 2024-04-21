@@ -1,0 +1,31 @@
+:root {
+  /* // Основные цвета */
+  --blue-color: #327c90;
+  --birch-color: #8af3e5;
+  --birch-dark-color: #5ec9cd34;
+  --birch-light-color: #89decc;
+  --birch-color-waves: #18a590;
+  --black-light: #a0a0a0;
+  --black: #000;
+  --black-transparent-color: rgba(0, 0, 0, 0)
+  --primary: #8af3e5;
+  --white: #ffffff;
+  --white-dark: #e8e8e8;
+  --bg: #f5f5f5;
+  --grey-light-color: #f8f8f8;
+  --light: #c2c2c2;
+  --grass: #125369;
+  --text-white-color: #fff;
+  --error-color: #d80000;
+  --success-color: #03a600;
+  --success-color-btn: #7ad611bd;
+}
+
+html {
+  background-color: var(--blue-color);
+  max-height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}

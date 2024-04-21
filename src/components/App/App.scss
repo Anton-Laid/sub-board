@@ -1,14 +1,5 @@
-html {
-  background-color: #327c90;
-  max-height: 100%;
-}
-
-* {
-  box-sizing: border-box;
-}
-
 .App {
-  background-color: #327c90;
+  background-color: var(--blue-color);
   position: relative;
   width: 100vw;
   height: 100vh;

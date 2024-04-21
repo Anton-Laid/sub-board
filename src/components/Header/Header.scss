@@ -3,7 +3,7 @@
   width: 90%;
   position: relative;
   z-index: 5;
-  font-family: 'Route', Arial, sans-serif;
+  font-family: "Route", Arial, sans-serif;
 
   &__link {
     font-size: 18px;
@@ -11,7 +11,7 @@
     line-height: 16px;
     letter-spacing: 0px;
     text-align: center;
-    color: #ffffff;
+    color: var(--white);
     text-decoration: none;
     margin: 0 20vw 0 0;
     height: 16px;
@@ -28,8 +28,8 @@
     height: 30px;
     line-height: 30px;
     border-radius: 20px;
-    background-color: #ffffff;
-    color: #327c90;
+    background-color: var(--white);
+    color: var(--blue-color);
   }
 
   &__burger {
@@ -59,7 +59,7 @@
     &__burger span {
       transition: all 0.4s;
       height: 2px;
-      background-color: #fff;
+      background-color: var(--white);
       display: block;
       width: 40px;
       margin: 4px;
@@ -68,7 +68,7 @@
     &__burger_pop span:nth-child(1) {
       transform: translate(7px, -6px) rotate(45deg);
       transform-origin: left top;
-      background-color: #000;
+      background-color: var(--black);
     }
 
     &__burger_pop span:nth-child(2) {
@@ -78,7 +78,7 @@
     &__burger_pop span:nth-child(3) {
       transform: translate(-5px, -25px) rotate(-45deg);
       transform-origin: right bottom;
-      background-color: #000;
+      background-color: var(--black);
     }
   }
 }

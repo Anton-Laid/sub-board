@@ -13,6 +13,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.14.1",
     "react-scripts": "5.0.1",
+    "react-text-mask": "^5.5.0",
     "router-dom": "^2.2.11",
     "sass": "^1.63.6",
     "swiper": "^10.0.4",
@@ -24,14 +25,6 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest",
-      "plugin:storybook/recommended",
-      "plugin:storybook/recommended"
-    ]
   },
   "browserslist": {
     "production": [
@@ -48,7 +41,7 @@
   "devDependencies": {
     "gh-pages": "^5.0.0",
     "prop-types": "^15.8.1",
-    "storybook": "^7.2.3",
-    "webpack": "^5.88.2"
+    "webpack": "^5.88.2",
+    "react-text-mask": "^5.5.0"
   }
 }

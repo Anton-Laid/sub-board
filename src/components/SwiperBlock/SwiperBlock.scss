@@ -7,12 +7,6 @@
   list-style-type: none;
 }
 
-:root {
-  --primary: #8af3e5;
-  --white: #ffffff;
-  --bg: #f5f5f5;
-}
-
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -78,7 +72,7 @@ body {
 }
 
 .slide_image img:hover {
-  transform: scale(1.2); /* Увеличиваем масштаб */
+  transform: scale(1.2);
 }
 
 @media (max-width: 500px) {
@@ -165,7 +159,7 @@ body {
 }
 
 .slider-controler .slider-arrow::after {
-  content: '';
+  content: "";
 }
 
 .swiper-pagination {
